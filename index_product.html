@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BunBunBakeShop - Product Details</title>
+		<link rel="stylesheet" href="style_product.css">
+	</head>
+
+	<body>
+		<!-- Website navigation bar and header, with search, shopping cart and profile -->
+		<header>
+            <nav>
+                <ul class="nav__links">
+                	<li><a href="index.html">BunBunBakeShop</a></li>
+                    <li><a href="index_shop.html">Shop</a></li>
+                    <li><a href="index_about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="header_end">
+            	<ul>
+					<li><ion-icon name="search-outline"></ion-icon></li>
+					<li class="cart_icon">
+						<a href="index_cart.html"><ion-icon name="cart-outline"></ion-icon></a><span style='font-family:Montserrat'>0</span>
+					</li>
+					<li><ion-icon name="person-circle-outline"></ion-icon></li>
+				</ul>
+			</div>
+		</header>
+		
+		<!-- Main section of the page. Pop-up window with product image, description, options for purchasing, additional documents and checkout button -->
+		<section>
+            <div class="rectangle">
+  				<div class="left">
+		    		<span style='font-family:Montserrat;font-size:14px;color:#4b4b4b;'>Flavor: Original</span>
+		    		<div class=roll_image>
+		    			<img src="images/roll.png" alt="picture of cinnamon roll product">
+		    		</div>
+		    		<div class="buttons">
+		    			<select class="drop_down" id="glaze">
+              				<option value="0">Glaze:</option>
+             				<option value="None">None</option>
+             				<option value="Sugar-Milk">Sugar-Milk</option>
+             				<option value="Vanilla-Milk">Vanilla-Milk</option>
+             				<option value="Double-Chocolate">Double-Chocolate</option>
+          				</select>
+		    			<select class="drop_down" id="roll(s)">
+              				<option value="0">Roll(s):</option>
+             				<option value="1">1</option>
+             				<option value="3">3</option>
+             				<option value="6">6</option>
+             				<option value="12">12</option>
+          				</select>
+		    			<button class="add_to_cart">Add to Cart</button></a>
+	    			</div>
+            	</div>
+            	<div class="right">
+            		<p>Product Description:<p> <br> <span style='font-family:Montserrat'>Our signature original cinnamon bun! Delivered to your door within the hour, guarenteed fresh and warm! We promise you won't be able to stop eating them!</span>
+            		<div class = price><br>$<span style='font-family:Montserrat;font-size:14px;color:#4b4b4b;'>5.99</span></div>
+            		<div class="buttons2">
+            			<a href="index_cart.html"><button class="button2">Checkout</button></a>
+            		</div>
+            	</div>			
+        	</div>
+		</section>
+
+		<!-- Website footer, with contact info and socials -->
+		<footer>
+			<div>
+				<ul>
+					<li><ion-icon name="call-outline"></ion-icon></li>
+					<li><p> 123-456-789 </p></li>
+					<li><ion-icon name="home-outline"></ion-icon></li>
+					<li><p> 123 Random St., Pittsburgh, PA, 15217 </p></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<li><ion-icon name="logo-facebook"></ion-icon></li>
+					<li><ion-icon name="logo-instagram"></ion-icon></li>
+				</ul>
+			</div>
+		</footer>
+		<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+		<script src=main.js></script>
+	</body>
+</html>

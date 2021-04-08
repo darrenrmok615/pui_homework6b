@@ -1,0 +1,146 @@
+/* basic alignment settings */
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font settings */
+p {
+  	font-family: Montserrat;
+  	font-size: 14px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+	  line-height: normal;
+  	letter-spacing: normal;
+  	color: #4b4b4b;
+}
+
+/* header settings */
+header {
+	  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+
+.nav__links {
+    list-style-type: none;
+    font-family: Montserrat;
+  	font-size: 14px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #4b4b4b;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #282828;
+}
+
+.header_end li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.cart_icon ion-icon {
+  padding-right: 5px;
+}
+
+.cart_icon a {
+  cursor: pointer;
+}
+
+/* alignment settings for the main section of the page */
+section {
+	  min-height: 75%;
+    position: relative;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-image: url(images/body.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.50);
+}
+
+/* button settings */
+.button__section {
+    display: flex;
+    align-items: center;
+}
+
+.button_thing {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    background: rgba(109, 93, 73, 1);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+/* button animation settings */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(109, 93, 73, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(109, 93, 73, 0);
+    }
+}
+
+.button_thing p {
+	  margin-top: 35%;
+	  font-family: Montserrat;
+  	font-size: 14px;
+  	font-weight: 500;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	text-align: center;
+  	color: #ffffff;
+}
+
+/* footer settings */
+footer {
+	  display: flex;
+	  justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+footer li {
+    display: inline-block;
+    padding: 0 5px;
+}
